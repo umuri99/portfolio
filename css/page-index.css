@@ -285,7 +285,113 @@ section.work_area .work_list li .info dl dd {
  *  スマートフォン向けデザイン
  ================================================*/
 @media screen and (max-width:500px) {
+  /*メインエリア用*/
+  section#main_area .main_box header {
+    height: 16vw;
+    padding: 10vw 0 0 5vw;
+  }
+  section#main_area .main_box header h1 {
+    font-size: 15vw;
+  }
+  section#main_area .main_box header ul {
+    display: none;
+  }
+  section#main_area .main_box h2 {
+    font-size: 12vw;
+    left: 8%;
+    bottom: 45%;
 
+  }
 
+  /* イントロエリア用 */
+  section.intro_area {
+    padding: 20vw 0;
+  }
+  section.intro_area h2 {
+    font-size: 8vw;
+    margin-bottom: 4vw;
+  }
+  section.intro_area h2:nth-of-type(n+2) {
+    margin-top: 9vw;
+  }
+  section.intro_area .about_box {
+    display: block;
+  }
+  section.intro_area .about_box figure {
+    width: 100%;
+    margin-bottom: 9vw;
+    text-align: center;
+  }
+  section.intro_area .about_box figure img {
+    width: 80vw;
+  }
+  section.intro_area .about_box figure figcaption {
+    font-size: 5.8vw;
+    margin-top: 4vw;
+  }
+  section.intro_area .about_box .info_list {
+    margin-left: 0;
+    width: 100%;
+  }
+  section.intro_area .about_box .info_list dt {
+    font-size: 6vw;
+    margin-bottom: 4vw;
+  }
+  section.intro_area .about_box .info_list dt:nth-of-type(n+2) {
+    margin-top: 9vw;
+  }
+
+  /* スキルエリア */
+  section.skill_area {
+    padding: 20vw 0;
+  }
+  section.skill_area .column_bg div {
+    width: 11.25vw;
+  }
+  section.skill_area .contents_box h2 {
+    font-size: 8vw;
+    margin-bottom: 4vw;
+  }
+  section.skill_area .contents_box h3 {
+    font-size: 6vw;
+    margin-bottom: 4vw;
+  }
+  section.skill_area .contents_box h3:nth-of-type(n+2) {
+    margin-top: 9vw;
+  }
+  section.skill_area .contents_box dl dt {
+    margin: 0 0 2vw 0.75em;
+  }
+  section.skill_area .contents_box dl dt:nth-of-type(n+2) {
+    margin-top: 4vw;
+  }
+
+  /* ワークエリア */
+  section.work_area {
+    padding: 20vw 0;
+  }
+  section.work_area h2 {
+    font-size: 8vw;
+    margin-bottom: 4vw;
+  }
+  section.work_area .work_list {
+    display: block;
+  }
+  section.work_area .work_list li {
+    width: 100%;
+  }
+  section.work_area .work_list li:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 9vw;
+  }
+  section.work_area .work_list li .info {
+    margin-top: 3vw;
+  }
+  section.work_area .work_list li .info h3 {
+    font-size: 6vw;
+  }
+  section.work_area .work_list li .info dl dt {
+    margin: 3vw 0 1vw 0;
+  }
 
 }

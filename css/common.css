@@ -424,9 +424,10 @@ img {
 	-webkit-justify-content: center;
 	justify-content: center;
 	position: fixed;
-	top: 0;
-	right: 0;
+	top: 5vw;
+	right: 5vw;
 	z-index: 1000;
+  background-color: #15182d;
 }
 #sp_menu_btn .hamburger-icon {
 	position: relative;
@@ -575,10 +576,9 @@ img {
 /*================================================
  *  フッター
  ================================================*/
-body:not(.sp_fixed_none) footer {
-	padding-bottom: 16vw;
+footer .copyright small {
+  font-size: 2.6vw;
 }
-
 
 /*================================================
  *  SP下タブ

@@ -176,8 +176,8 @@ img,svg {
 .indent_list li,
 .diamond_list li {
 	list-style-position:inside;
-	padding-left: 1em;
-	text-indent: -1em;
+	padding-left: 0.5em;
+	text-indent: -0.5em;
 }
 /*※箇条書き*/
 .kome_list > li::before{

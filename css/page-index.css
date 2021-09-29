@@ -217,7 +217,7 @@ section.skill_area .contents_box .reference_list {
   line-height: 1.75;
   position: relative;
   z-index: 1;
-  padding-left: 1em;
+  padding-left: 0.5em;
 }
 
 /* ワークエリア */

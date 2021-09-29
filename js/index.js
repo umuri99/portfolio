@@ -215,8 +215,6 @@ $(window).on('load scroll', function () {
   });
 });
 
-
-
 //slidebars
 (function ($) {
   $(document).ready(function () {
@@ -225,16 +223,6 @@ $(window).on('load scroll', function () {
     });
   });
 })(jQuery);
-
-//layzr
-// window.addEventListener("DOMContentLoaded", function () {
-//   var layzr = new Layzr({
-//     selector: '[data-layzr]',
-//     attr: 'data-layzr',
-//     threshold: 50,
-//   });
-
-// });
 
 //スライダー起動
 $(document).ready(function () {
@@ -256,5 +244,18 @@ $(document).ready(function () {
     showCursor: true,
     typeSpeed: 200
   })
+
+  //ハンバーガーメニュー起動
+  $('#sp_menu_btn').click(function () {
+    $(this).toggleClass('active');
+    $('#drawer').toggleClass('active');
+    $('h1').toggleClass('active');
+  });
+
+  $('#drawer ul li a').click(function () {
+    $('#sp_menu_btn').removeClass('active');
+    $('#drawer').removeClass('active');
+    $('h1').removeClass('active');
+  });
 
 });

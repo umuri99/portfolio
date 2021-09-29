@@ -3,7 +3,6 @@
  *  indexページ用
  ================================================*/
  /*メインエリア用*/
-section#main_area {}
 section#main_area .main_slider {
   height: 100vh;
   position: relative;
@@ -13,9 +12,6 @@ section#main_area .main_slider .slick-list {
 }
 section#main_area .main_slider .slick-list .slick-track {
   height: inherit;
-}
-section#main_area .main_slider li {
-
 }
 section#main_area .main_slider li img {
   height: inherit;
@@ -166,7 +162,6 @@ section.skill_area .column_bg div {
 section.skill_area .column_bg div:first-child {
   border-left: 1px solid hsla(0, 0%, 100%, 0.08);
 }
-section.skill_area .contents_box {}
 section.skill_area .contents_box h2 {
   font-size: 36px;
   font-weight: bold;
@@ -191,8 +186,6 @@ section.skill_area .contents_box h3 {
 }
 section.skill_area .contents_box h3:nth-of-type(n+2) {
   margin-top: 40px;
-}
-section.skill_area .contents_box dl {
 }
 section.skill_area .contents_box dl dt {
   color: #333;
@@ -225,10 +218,6 @@ section.skill_area .contents_box .reference_list {
   position: relative;
   z-index: 1;
   padding-left: 1em;
-
-}
-section.skill_area .contents_box .reference_list li {
-
 }
 
 /* ワークエリア */
@@ -293,6 +282,13 @@ section.work_area .work_list li .info dl dd {
   section#main_area .main_box header h1 {
     font-size: 15vw;
   }
+  section#main_area .main_box header h1.active {
+    position: fixed;
+    top: 5.5vw;
+    left: 5vw;
+    z-index: 1000;
+    color: #333;
+  }
   section#main_area .main_box header ul {
     display: none;
   }
@@ -300,7 +296,6 @@ section.work_area .work_list li .info dl dd {
     font-size: 12vw;
     left: 8%;
     bottom: 45%;
-
   }
 
   /* イントロエリア用 */

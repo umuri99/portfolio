@@ -23,16 +23,13 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/ityped.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
 
   <!-- 共通head end -->
 
 </head>
 
 <body id="index">
-
-  <!-- ▼ヘッダー -->
-  <!-- ▲ヘッダー -->
 
   <!-- ▼コンテンツ ******************************************************************** -->
   <main>
@@ -59,6 +56,7 @@
           </header>
 
           <h2 class="ff_roboto"></h2>
+
         </div>
       </section>
       <!-- メインスライダーエリア△ -->
@@ -68,8 +66,8 @@
         <h2 class="ff_roboto" id="message">Message</h2>
         <p>
         初めまして、鈴木杏輔と申します。<br class="pc">
-        Web業界の就職を目標に現在転職活動をしています。<br class="pc">
-        6ヶ月間、職業訓練(12/20～7/7)に通いスキルを磨いてきました。 クライアントの要望にしっかりと答えられるような Webクリエイターを目指しています。
+        Webエンジニアを目標に現在転職活動をしています。<br class="pc">
+        6ヶ月間、職業訓練(2019/12/20~2020/7/7)に通いスキルを磨き、その後web制作会社で働いて(2020/9/16~2021~2/20)いました。
         </p>
 
         <h2 class="ff_roboto" id="about">About</h2>
@@ -81,18 +79,20 @@
           <dl class="info_list">
             <dt>プロフィール</dt>
             <dd>
-              鈴木杏輔（すずききょうすけ）1996年生まれ、岐阜工業高校電子科卒業後4年と4ヶ月の間清涼飲料水充填工場の原料発注担当をしてきました。
-              成長を楽しみながら日々Web制作やプログラミングを学習しています。
-              現在は未経験からのWEB・IT業界に就職するために転職活動しています。
+              鈴木杏輔（すずききょうすけ）1996年生まれ、岐阜工業高校電子科卒業後4年と4ヶ月の間清涼飲料水充填工場の原料発注担当をしてきましたが、もっと楽しい仕事があるんじゃないかと思い、仕事の中で楽しかったと感じた瞬間を振り返ると、自分の成長を感じた時が楽しかったと思ったので、元々PCに興味があったし、IT業界は日々成長が求められる業界だと思うのでこの業界に入ってきました。
+              日々成長を楽しみながら日々プログラミング学習などをしています。
             </dd>
             <dt>資格</dt>
             <dd>
-              webクリエイター試験エキスパート
-              Photoshopクリエイター試験エキスパート
-              illustratorクリエイター試験エキスパート
-              javaプログラミング能力認定試験2級
-              パソコンスピード認定試験2級
-              普通自動車運転免許
+              <ul class="disc_list">
+                <li>webクリエイター試験エキスパート</li>
+                <li>Photoshopクリエイター試験エキスパート</li>
+                <li>illustratorクリエイター試験エキスパート</li>
+                <li>javaプログラミング能力認定試験2級</li>
+                <li>パソコンスピード認定試験2級</li>
+                <li>普通自動車運転免許</li>
+                <li>普通自動二輪車（小型）</li>
+              </ul>
             </dd>
             <dt>趣味</dt>
             <dd>かっこいい趣味は持ってないですが、映画鑑賞・漫画・ゲームなんかが好きです（笑）</dd>
@@ -171,6 +171,10 @@
             <li><a href="https://www.udemy.com/course/docker-k/" rel="nofollow" target="_blank">【Udemy】ゼロからはじめる Dockerによるアプリケーション実行環境構築</a></li>
             <li><a href="https://www.udemy.com/course/adobe-xd-uux/" rel="nofollow" target="_blank">【Udemy】【2020年最新版】Adobe XD 手を動かして覚えるUI/UXプロトタイピング。初級から高度テクニックまで全てを学ぶ</a></li>
             <li><a href="https://www.udemy.com/course/html-css-js/" rel="nofollow" target="_blank">【Udemy】[HTML/CSS/JavaScript] フロントエンドエンジニアになりたい人の Webプログラミング入門</a></li>
+            <li><a href="https://prog-8.com/">Progate Rubyコース</a></li>
+            <li><a href="https://prog-8.com/">Progate Ruby on Railsコース</a></li>
+            <li><a href="https://prog-8.com/">Progate Javascript コース</a></li>
+            <li><a href="https://prog-8.com/">Progate HTML CSSコース</a></li>
           </ul>
 
         </div>
@@ -191,9 +195,11 @@
                 <dt>DB</dt>
                 <dd>Mysql</dd>
                 <dt>概要</dt>
-                <dd>ランダムに出力されるテーマから新しいアイデアを考えるサービスです</dd>
+                <dd>ランダムに出力されるテーマから新しいアイデアを考えるサービスです。</dd>
                 <dt>機能</dt>
                 <dd>ユーザー登録、登録情報の変更、ログイン、ログアウト、文章投稿、投稿削除、記事のお気に入り登録、ランダムなデータベースの出力</dd>
+                <dt>GitHubソースコード</dt>
+                <dd><a class="underline" href="https://github.com/umuri99/idea-mixer">https://github.com/umuri99/idea-mixer</a></dd>
               </dl>
             </div>
           </li>
@@ -211,13 +217,15 @@
                 <dt>DB</dt>
                 <dd>postgresql</dd>
                 <dt>概要</dt>
-                <dd>Rails tutorialというWeb上の教材のアプリです。twitter様な機能をもったSNSアプリケーションです</dd>
+                <dd>Rails tutorialというWeb上の教材で作成した、twitter様な機能をもったSNSアプリケーションです。</dd>
                 <dt>機能</dt>
                 <dd>ユーザー登録、登録情報の変更、管理者アカウントによる登録ユーザーの削除、フィード機能、ログイン、ログアウト、文章投稿、画像投稿、投稿削除、ユーザー間でのフォロー</dd>
+                <dt>GitHubソースコード</dt>
+                <dd><a class="underline" href="https://github.com/umuri99/sample_app">https://github.com/umuri99/sample_app</a></dd>
               </dl>
             </div>
-
           </li>
+
         </ul>
       </section>
       <!-- スキルエリア△ -->
@@ -233,25 +241,17 @@
     </div>
   </footer>
 
-
   <div class="pagetop"></div>
-
-
-  <!-- ▽SP下タブ -->
-  <div class="sp">
-    <ul class="sp_fixed_bottom">
-      <li><a href=""></a></li>
-    </ul>
-  </div>
-  <!-- △SP下タブ -->
-
 
   <!-- ▽ドロワー -->
   <div id="sp_menu_btn"><span class="hamburger-icon"></span></div>
 
   <div id="drawer">
-    <ul>
-      <li><a href=""></a></li>
+    <ul class="ff_roboto">
+      <li><a href="#message">Message</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#work">Work</a></li>
     </ul>
   </div><!-- / #drawer -->
   <!-- △ドロワー -->

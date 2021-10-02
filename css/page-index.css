@@ -18,6 +18,7 @@ section#main_area .main_slider li img {
   width: inherit;
   object-fit: cover;
   object-position: center;
+  font-family: 'object-fit: cover; object-position: center;';
 }
 section#main_area .main_box {
   width: 100%;

@@ -16,7 +16,6 @@ body {
 a,.linearAnime {
 	color: inherit;
 	text-decoration: none;
-	-webkit-transition: all 0.1s linear;
 	transition: all 0.1s linear;
 }
 a.underline {
@@ -129,9 +128,9 @@ img,svg {
     font-size: 1em;
     opacity: 1;
     -webkit-animation: blink 0.3s infinite;
-    -moz-animation: blink 0.3s infinite;
     animation: blink 0.3s infinite;
-    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
 }
 
 @keyframes blink {
@@ -141,12 +140,6 @@ img,svg {
 }
 
 @-webkit-keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes blink {
     100% {
         opacity: 0;
     }
@@ -291,14 +284,8 @@ footer .copyright small {
   #sp_menu_btn {
     width: 15vw;
     height: 15vw;
-    display: -webkit-box;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
     position: fixed;
     top: 5vw;
@@ -315,7 +302,6 @@ footer .copyright small {
   #sp_menu_btn .hamburger-icon::after {
     width: 8vw;
     height: 2px;
-    -webkit-transition: all .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
     transition: all .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
     background-color: #fff;
   }
@@ -337,11 +323,9 @@ footer .copyright small {
     top: 0;
   }
   #sp_menu_btn.active .hamburger-icon::before {
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   #sp_menu_btn.active .hamburger-icon::after {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 
@@ -352,10 +336,8 @@ footer .copyright small {
     top: 0;
     right: 0;
     bottom: 0;
-    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     z-index: 999;
-    -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     visibility: hidden;
     opacity: 0;
@@ -368,7 +350,6 @@ footer .copyright small {
   #drawer.active {
     visibility: visible;
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
   #drawer::-webkit-scrollbar {

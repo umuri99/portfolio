@@ -115,14 +115,6 @@ img,svg {
   margin: 0 auto;
 }
 
-/*Animate.css用*/
-.animated {
-	opacity: 0;
-}
-.animated.move {
-	opacity: 1;
-}
-
 /* タイピング風アニメーション用 */
 .ityped-cursor {
     font-size: 1em;

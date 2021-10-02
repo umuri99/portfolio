@@ -70,15 +70,19 @@ section#main_area .main_box header ul li a::before {
 section#main_area .main_box header ul li a:hover::before {
   left: 0;
 }
-section#main_area .main_box h2 {
+
+section#main_area .main_box .ityped {
   font-size: 10vw;
   font-weight: bold;
   color: #fff;
   position: absolute;
   left: 12%;
   bottom: 28%;
-
 }
+section#main_area .main_box .ityped h2 {
+  display: inline;
+}
+
 
 /* イントロエリア用 */
 section.intro_area {
@@ -292,7 +296,7 @@ section.work_area .work_list li .info dl dd {
   section#main_area .main_box header ul {
     display: none;
   }
-  section#main_area .main_box h2 {
+  section#main_area .main_box .ityped h2 {
     font-size: 12vw;
     left: 8%;
     bottom: 45%;

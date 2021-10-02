@@ -150,71 +150,6 @@ $(function () {
   });
 });
 
-//固定リンクの遅延追従
-jQuery(function ($) {
-  $(window).scroll(function () {
-    $(window).exScrollEvent({
-      delay: 10,
-      callback: function (evt, param) {
-        if (param.status == 0) {
-          $('.fixed-link').queue([]).animate({
-            top: 235 + param.scroll.top
-          }, 500)
-        }
-      }
-    });
-  });
-});
-
-//pagetop アニメーション
-$(document).ready(function () {
-  var pagetop = $('.pagetop');
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
-      pagetop.fadeIn();
-    } else {
-      pagetop.fadeOut();
-    }
-  });
-  pagetop.click(function () {
-    $('body, html').animate({ scrollTop: 0 }, 500);
-    return false;
-  });
-});
-
-
-//Animate.css用
-$(window).on('load scroll', function () {
-  var elem = $('.animated');
-  elem.each(function () {
-    var isAnimate = $(this).data('animate');
-    var elemOffset = $(this).offset().top;
-    var elemHeight = $(this).height();
-    var scrollPos = $(window).scrollTop();
-    var wh = $(window).height();
-
-    var aniAnchor = wh / 6;
-    var dataAnchor = $(this).attr('data-animate-anchor');
-    if (dataAnchor == 0) {
-      var aniAnchor = 0;
-    } else if (dataAnchor && $.isNumeric(dataAnchor)) {
-      var aniAnchor = wh / dataAnchor;
-    }
-
-    if (dataAnchor == 'bottom') {
-      if (elemOffset + elemHeight < wh + scrollPos) {
-        if (isAnimate) { $(this).addClass(isAnimate); }
-        $(this).addClass('move');
-      }
-    } else {
-      if (scrollPos > elemOffset - wh + aniAnchor) {
-        if (isAnimate) { $(this).addClass(isAnimate); }
-        $(this).addClass('move');
-      }
-    }
-  });
-});
-
 //slidebars
 (function ($) {
   $(document).ready(function () {
@@ -237,13 +172,13 @@ $(document).ready(function () {
   });
 
   //タイピング風アニメーション
-  ityped.init(document.querySelector(".main_box h2"), {
+  ityped.init(document.querySelector(".main_box .ityped h2"), {
     strings: ['Suzuki kyosuke'],
     startDelay: 200,
     loop: false,
     showCursor: true,
     typeSpeed: 200
-  })
+  });
 
   //ハンバーガーメニュー起動
   $('#sp_menu_btn').click(function () {

@@ -73,7 +73,7 @@ $(document).ready(function () {
   //タイピング風アニメーション
   ityped.init(document.querySelector(".main_box .ityped h2"), {
     strings: ['Suzuki kyosuke'],
-    startDelay: 200,
+    startDelay: 1000,
     loop: false,
     showCursor: true,
     typeSpeed: 200
